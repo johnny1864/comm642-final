@@ -1,0 +1,53 @@
+body{
+    
+}
+
+h1{
+    text-align: center;
+}
+
+ul{
+    display: flex;
+    justify-content: center;
+}
+
+li{
+    list-style: none;
+    padding: 10px 20px;
+    color: #444;
+    font-size: 3em;
+    font-weight: bold;
+}
+
+i{
+    cursor: pointer;
+    font-size: 3em;
+}
+
+.slider{
+    display: flex;
+}
+
+
+.slider-img{
+    background-color: #444;
+    width: 600px;
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    padding: 5px;
+}
+
+.slider-img img{
+    width: 600px;
+    display: none;
+}
+
+.slider-img img.active{
+    display: inline-block
+}
+
+.active{
+    color: red;
+}
