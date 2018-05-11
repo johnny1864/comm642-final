@@ -46,9 +46,16 @@ i{
 }
 
 .slider-img img.active{
-    display: inline-block
+    display: inline-block;
+    animation: fade 2s ease;
 }
 
 .active{
     color: red;
+}
+
+@keyframes fade {
+    0%{opacity: 0.1};
+    50%{opacity: 0.5};
+    100%{opacity: 1};
 }
