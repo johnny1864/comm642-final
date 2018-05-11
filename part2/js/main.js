@@ -28,4 +28,17 @@ $(document).ready(function(){
            $('ul li').last().addClass('active').css('z-index', 10);
        }
    });
+    
+    
+    //DISPLAY IMAGES SELECTED 
+    
+    $('ul').click(function(e){
+        console.log(e.target);
+    });
 });
+
+
+
+
+
+

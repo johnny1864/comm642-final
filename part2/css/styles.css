@@ -17,6 +17,7 @@ li{
     color: #444;
     font-size: 3em;
     font-weight: bold;
+    cursor: pointer;
 }
 
 i{
