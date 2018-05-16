@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+}
+
+/**********
+    TABS
+***********/
+#tabs{
+    background-color: #444;
+}
+#tabs li{
+    background-color: #ccc;
+    display: inline-block;
+}
+#tabs a{
+    display: block;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: #444;
+}
+
+#tab-content{
+    width: 400px;
+    margin-left: 40px;
+    padding: 10px;
+    background-color: #f1f1f1;
+}
+
+li.active{
+    background-color: #f1f1f1 !important;
+}
+
+.active a{
+    color:  !important;
+}
+
+
+/****************
+    ACCORDION
+****************/
+
+.accordion-item{
+    width: 500px;
+}
+
+.accordion-item button{
+    width: 100%;
+    background-color: chartreuse;
+    cursor: pointer;
+}
+.accordion-item p{
+    display: none;
+}
+
+.clicked{
+    background-color: #ccc !important;
+}
+
+.block{
+    display: block !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
