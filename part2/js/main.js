@@ -7,11 +7,11 @@ $(document).ready(function(){
        var nextImg = currentImg.next();
        
        if(nextImg.length){
-           currentImg.removeClass('active').css('z-index', -10);
+           currentImg.removeClass('active');
            nextImg.addClass('active');
        }else{
-           currentImg.removeClass('active').css('z-index', -10);
-           $('.slider-img img').first().addClass('active').css('z-index', 10);
+           currentImg.removeClass('active');
+           $('.slider-img img').first().addClass('active');
            $('ul li').first().addClass('active');
        }
    });
@@ -22,11 +22,11 @@ $(document).ready(function(){
        var prevImg = currentImg.prev();
        
        if(prevImg.length){
-           currentImg.removeClass('active').css('z-index', -10);
+           currentImg.removeClass('active');
            prevImg.addClass('active');
        }else{
-           currentImg.removeClass('active').css('z-index', -10);
-           $('.slider-img img').last().addClass('active').css('z-index', 10);
+           currentImg.removeClass('active');
+           $('.slider-img img').last().addClass('active');
            $('ul li').last().addClass('active');
        }
    });
