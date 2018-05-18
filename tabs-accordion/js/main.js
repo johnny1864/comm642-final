@@ -5,11 +5,6 @@ $(document).ready(function () {
         $('#tab-content div').hide();
         $('#tab1').show();
         $('a').click(displayTab);
-        $('a').hover(function(){
-            
-        }, function(){
-            
-        });
     }
 
     function displayTab(e) {
