@@ -47,17 +47,25 @@ li.active{
     width: 100%;
     background-color: chartreuse;
     cursor: pointer;
+    margin-left: 1em;
 }
 .accordion-item p{
     display: none;
+    margin-left: 1em;
+    background-color: #f1f1f1;
 }
 
 .clicked{
-    background-color: #ccc !important;
+    background-color: red !important;
 }
 
 .block{
     display: block !important;
+}
+
+button span{
+    float: left;
+    padding-left: 10px;
 }
 
 
