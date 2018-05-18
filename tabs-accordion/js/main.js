@@ -5,7 +5,11 @@ $(document).ready(function () {
         $('#tab-content div').hide();
         $('#tab1').show();
         $('a').click(displayTab);
-        $('a').mouseenter().mouseleave();
+        $('a').hover(function(){
+            
+        }, function(){
+            
+        });
     }
 
     function displayTab(e) {
@@ -24,22 +28,22 @@ $(document).ready(function () {
             $(this).parent().addClass('active');
         }
     }
-    
+
     tabs();
 
 
-function accordion() {
-    $('button span').addClass('plus');
-    $('button').click(function (e) {
-        var parent = $(this).parent()[0].id;
-        $(this).toggleClass('clicked');
-        $(`#${parent} p `).toggleClass('block');
-        
-         $('button span').;
-        //console.log(plusSign);
-        
-    });
-}
+    function accordion() {
+        $('button').addClass('plus');
+        $('button').click(function (e) {
+            var parent = $(this).parent()[0].id;
+            $(this).toggleClass('clicked');
+            $(`#${parent} p `).slideToggle(500);
+            
+            //TOGGEL PLUS AND MINUS IMAGES
+            $(this).toggleClass('plus');
+            $(this).toggleClass('minus');
+        });
+    }
 
-accordion();
+    accordion();
 });

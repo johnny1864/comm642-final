@@ -41,6 +41,7 @@ li.active{
 
 .accordion-item{
     width: 500px;
+    transition: 1s;
 }
 
 .accordion-item button{
@@ -53,6 +54,7 @@ li.active{
     display: none;
     margin-left: 1em;
     background-color: #f1f1f1;
+   
 }
 
 .clicked{
@@ -61,11 +63,21 @@ li.active{
 
 .block{
     display: block !important;
+    transition: 1s;
 }
 
 button span{
-    float: left;
-    padding-left: 10px;
+    padding-left: 20px;
+    margin-right: 50px
+}
+
+.plus{
+    background: url('../images/plus.png') no-repeat;
+    background-position: left;
+}
+
+.minus{
+    background: url('../images/minus.png') no-repeat;
 }
 
 
